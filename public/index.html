@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRISHI SIRI - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.344.0/font/lucide.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" id="nav-title">KRISHI SIRI</a>
+            <button class="btn btn-outline-light btn-sm" onclick="toggleLanguage()" id="lang-btn">ಕನ್ನಡ</button>
+        </div>
+    </nav>
+
+    <header class="hero text-center py-5 bg-white border-bottom">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-success" id="hero-title">KRISHI SIRI</h1>
+            <p class="lead text-muted" id="hero-subtitle">Smart Crop Advisory System</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            <!-- Crop Recommendation -->
+            <div class="col-md-4">
+                <a href="crop.html" class="text-decoration-none">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm hover-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="lucide-sprout text-success fs-1"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-dark" id="card-crop">Crop Recommendation</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- Pest Detection -->
+            <div class="col-md-4">
+                <a href="pest.html" class="text-decoration-none">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm hover-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="lucide-bug text-danger fs-1"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-dark" id="card-pest">Pest Detection</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- Weather Advisory -->
+            <div class="col-md-4">
+                <a href="weather.html" class="text-decoration-none">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm hover-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="lucide-cloud-sun text-primary fs-1"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-dark" id="card-weather">Weather Advisory</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- Market Prices -->
+            <div class="col-md-6">
+                <a href="market.html" class="text-decoration-none">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm hover-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="lucide-trending-up text-warning fs-1"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-dark" id="card-market">Market Prices</h3>
+                    </div>
+                </a>
+            </div>
+            <!-- Farmer Chatbot -->
+            <div class="col-md-6">
+                <a href="chatbot.html" class="text-decoration-none">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm hover-card">
+                        <div class="icon-wrapper mb-3">
+                            <i class="lucide-message-circle text-info fs-1"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-dark" id="card-chatbot">Farmer Chatbot</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 text-muted border-top bg-white">
+        <p>&copy; 2026 KRISHI SIRI - Student Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

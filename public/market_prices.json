@@ -1,0 +1,9 @@
+[
+  { "crop": "Rice", "price": "₹2,500/quintal", "trend": "up" },
+  { "crop": "Wheat", "price": "₹2,100/quintal", "trend": "down" },
+  { "crop": "Maize", "price": "₹1,800/quintal", "trend": "up" },
+  { "crop": "Cotton", "price": "₹6,500/quintal", "trend": "up" },
+  { "crop": "Sugarcane", "price": "₹3,200/quintal", "trend": "stable" },
+  { "crop": "Ragi", "price": "₹3,800/quintal", "trend": "up" },
+  { "crop": "Groundnut", "price": "₹5,500/quintal", "trend": "down" }
+]

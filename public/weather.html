@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Advisory - KRISHI SIRI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-success shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">KRISHI SIRI</a>
+            <a href="index.html" class="btn btn-outline-light btn-sm" id="back-btn">Back</a>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm p-4">
+                    <h2 class="text-center mb-4 text-success fw-bold" id="page-title">Weather Advisory</h2>
+                    <div class="input-group mb-4">
+                        <input type="text" id="city-input" class="form-control form-control-lg" placeholder="Enter City Name">
+                        <button class="btn btn-success px-4" id="weather-btn">Get Weather</button>
+                    </div>
+                    <div id="weather-result" class="d-none">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="p-3 bg-white border rounded text-center">
+                                    <h5 class="text-muted">Temperature</h5>
+                                    <p class="display-5 fw-bold mb-0"><span id="w-temp">--</span>°C</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 bg-white border rounded text-center">
+                                    <h5 class="text-muted">Humidity</h5>
+                                    <p class="display-5 fw-bold mb-0"><span id="w-hum">--</span>%</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="p-3 bg-white border rounded text-center">
+                                    <h5 class="text-muted">Condition</h5>
+                                    <p class="h3 fw-bold text-capitalize mb-0" id="w-cond">--</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="alert alert-warning mb-0">
+                                    <h5 class="alert-heading">Farming Advice:</h5>
+                                    <p id="w-advice" class="mb-0">Please enter a city to get advice.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+:root {
+    --primary-green: #2d6a4f;
+    --light-green: #d8f3dc;
+    --accent-green: #52b788;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background-color: var(--light-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.chat-message {
+    max-width: 80%;
+}
+
+.bot-message {
+    align-self: flex-start;
+}
+
+.user-message {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.user-message .message-content {
+    background-color: var(--primary-green) !important;
+    color: white;
+}
+
+#chat-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-up { color: #198754; }
+.trend-down { color: #dc3545; }
+.trend-stable { color: #6c757d; }
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+}

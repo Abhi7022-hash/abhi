@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation - KRISHI SIRI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-success shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">KRISHI SIRI</a>
+            <a href="index.html" class="btn btn-outline-light btn-sm" id="back-btn">Back</a>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm p-4">
+                    <h2 class="text-center mb-4 text-success fw-bold" id="page-title">Crop Recommendation</h2>
+                    <form id="crop-form">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label" id="label-n">Nitrogen (N)</label>
+                                <input type="number" class="form-control" name="N" required placeholder="0-140">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" id="label-p">Phosphorus (P)</label>
+                                <input type="number" class="form-control" name="P" required placeholder="0-145">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" id="label-k">Potassium (K)</label>
+                                <input type="number" class="form-control" name="K" required placeholder="0-205">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" id="label-temp">Temperature (°C)</label>
+                                <input type="number" step="0.1" class="form-control" name="temperature" required placeholder="e.g. 25.5">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" id="label-hum">Humidity (%)</label>
+                                <input type="number" step="0.1" class="form-control" name="humidity" required placeholder="e.g. 80">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" id="label-ph">pH Level</label>
+                                <input type="number" step="0.1" class="form-control" name="ph" required placeholder="0-14">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" id="label-rain">Rainfall (mm)</label>
+                                <input type="number" step="0.1" class="form-control" name="rainfall" required placeholder="e.g. 200">
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-success btn-lg px-5" id="predict-btn">Predict Crop</button>
+                        </div>
+                    </form>
+                    <div id="result" class="mt-4 text-center d-none">
+                        <div class="alert alert-success">
+                            <h4 class="alert-heading">Recommended Crop:</h4>
+                            <p class="display-6 fw-bold mb-0" id="predicted-crop"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

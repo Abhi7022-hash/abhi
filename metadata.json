@@ -1,0 +1,7 @@
+{
+  "name": "KRISHI SIRI – Smart Crop Advisory System",
+  "description": "A simple full-stack web application for farmers providing crop recommendations, pest detection, weather advisory, and market prices.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
